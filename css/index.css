@@ -1,0 +1,243 @@
+/* ABOUT */
+.section {
+    margin-top: 80px;
+    padding-top: 80px;
+    padding-bottom: 140px;
+}
+
+.inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.about_wrap {
+    display: flex;
+    justify-content: center;
+    padding-left: 4%;
+}
+
+.about_img {
+    display: inline-block;
+    position: relative;
+}
+
+.about_img img {
+    max-width: 500px;
+    width: 50vw;
+    height: auto;
+}
+
+.about_img::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 16px 10px #fff;
+}
+
+.about_txt {
+    margin: 8px 4%;
+}
+
+.about_wrap .about_txt .about_ttl h3 {
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 24px;
+    color: #e4a93b;
+}
+
+.about_wrap .about_txt .about_ttl::after {
+    content: "";
+    display: inline-block;
+    width: calc(100% - 290px);
+    height: 3px;
+    background: #e4a93b;
+}
+
+.about_wrap .about_txt p {
+    line-height: 48px;
+}
+
+.about_wrap .about_txt p strong {
+    background: linear-gradient(transparent 50%, #ffec9a 50%);
+}
+
+
+/* FEATURE */
+.feature_txt {
+    padding: 0 3%;
+}
+
+.feature_txt p {
+    letter-spacing: .2em;
+    line-height: 1.8em;
+    padding-bottom: 140px;
+}
+
+.feature_txt p strong {
+    color: #e4a93b;
+}
+
+.feature_txt p span {
+    border-bottom: 2px solid #e4a93b;
+}
+
+.arrow {
+    padding: 70px;
+    float: right;
+}
+
+.feature_wrap {
+    display: flex;
+}
+
+.feature_wrap .feature_item {
+    width: 480px;
+    height: 680px;
+    margin: 0 16px;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, .1);
+}
+
+.feature_wrap .feature_item .feature_img {
+    width: 100%;
+    height: 420px;
+    background-position: 60% 50%;
+    background-size: cover;
+}
+
+.feature_wrap .item1 .feature_img {
+    background-image: url(../img/feature1.jpg);
+}
+
+.feature_wrap .item2 .feature_img {
+    background-image: url(../img/feature2.jpg);
+}
+
+.feature_wrap .feature_item h3 {
+    padding: 28px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.feature_wrap .feature_item p {
+    padding: 0 24px;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+
+/* SERVICE */
+.service_txt {
+    padding: 0 3%;
+}
+
+.service_txt p {
+    letter-spacing: .2em;
+    line-height: 1.8em;
+    padding-bottom: 100px;
+}
+
+.service_txt p span {
+    border-bottom: 2px solid #e4a93b;
+}
+
+.service_txt p strong {
+    color: #e4a93b;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {
+    .service_item._service2,
+    .service_item._service3,
+    .service_item._service4 {
+        bottom: 0;
+        margin: 0 auto 10%;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .intro_txt {
+        margin-bottom: 50px;
+    }
+
+    .about_sub_ttl {
+        padding-top: 20px;
+    }
+
+    .about_wrap {
+        padding-left: 0;
+        flex-direction: column-reverse;
+    } 
+
+    .about_img {
+        margin: 40px auto;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .top_img img {
+        width: 70%;
+    }
+      
+    .service_item {
+        width: 100%;
+        margin: 0 0 10%;
+        height: auto;
+    }
+      
+    .service_inner_txt {
+        left: 46%;
+    }
+      
+    .btn {
+        background: #000;
+        width: 40%;
+        margin: auto;
+        text-align: center;
+    }
+      
+    .about_list {
+        display: block;
+    }
+      
+    .about_item {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10%;
+        border: solid 1px #ccc;
+    }
+      
+    .about_sub_ttl {
+        padding-top: 55px;
+    }
+      
+    .news_list {
+        display: block;
+    }
+      
+    .news_item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+        border: solid 1px #ccc;
+    }
+
+    .news_list {
+        display: block;
+      }
+      
+    .news_item {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10%;
+        border: solid 1px #ccc;
+    }
+}
